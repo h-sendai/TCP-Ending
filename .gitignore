@@ -1,0 +1,7 @@
+.depend
+*.o
+*.d
+*~
+ns-client/ns-client
+shutdown-rd/shutdown
+shutdown-wr/shutdown
