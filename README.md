@@ -5,3 +5,7 @@
 
 [ns-client](ns-client) なにもしないクライアント。サーバーに接続して10秒間なにもせず
 close()するプログラム。
+
+[shutdown-rd](shutdown-rd) shutdown(sockfd, SHUT_RD)
+
+[shutdown-wr](shutdown-wr) shutdown(sockfd, SHUT_WR)
