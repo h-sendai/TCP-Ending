@@ -273,6 +273,7 @@ int set_so_nodelay(int sockfd)
     return 0;
 }
 
+#ifdef __linux__
 int set_so_quickack(int sockfd)
 {
     int on = 1;
@@ -283,6 +284,7 @@ int set_so_quickack(int sockfd)
 
     return 0;
 }
+#endif
 
 int get_so_rcvlowat(int sockfd)
 {
