@@ -1,0 +1,117 @@
+0.000000 0.000000 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [S], seq 2022487096, win 43690, options [mss 65495,sackOK,TS val 3862523973 ecr 0,nop,wscale 7], length 0
+0.000026 0.000026 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [S.], seq 121015322, ack 2022487097, win 43690, options [mss 65495,sackOK,TS val 3862523973 ecr 3862523973,nop,wscale 7], length 0
+0.000044 0.000018 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862523973 ecr 3862523973], length 0
+0.000096 0.000052 SO_RCVBUF: 131072 bytes
+0.000620 0.000524 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 1:4097, ack 1, win 342, options [nop,nop,TS val 3862523974 ecr 3862523973], length 4096
+0.000643 0.000023 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 4097, win 491, options [nop,nop,TS val 3862523974 ecr 3862523974], length 0
+0.000657 0.000014 read returns: 4096 bytes
+1.000709 1.000052 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 4097:8193, ack 1, win 342, options [nop,nop,TS val 3862524974 ecr 3862523974], length 4096
+1.000718 0.000009 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 8193, win 491, options [nop,nop,TS val 3862524974 ecr 3862524974], length 0
+1.000798 0.000080 read returns: 4096 bytes
+2.000739 0.999941 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 8193:12289, ack 1, win 342, options [nop,nop,TS val 3862525974 ecr 3862524974], length 4096
+2.000750 0.000011 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 12289, win 491, options [nop,nop,TS val 3862525974 ecr 3862525974], length 0
+2.000824 0.000074 read returns: 4096 bytes
+3.000765 0.999941 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 12289:16385, ack 1, win 342, options [nop,nop,TS val 3862526974 ecr 3862525974], length 4096
+3.000772 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 16385, win 491, options [nop,nop,TS val 3862526974 ecr 3862526974], length 0
+3.000846 0.000074 read returns: 4096 bytes
+4.000802 0.999956 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 16385:20481, ack 1, win 342, options [nop,nop,TS val 3862527974 ecr 3862526974], length 4096
+4.000814 0.000012 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 20481, win 491, options [nop,nop,TS val 3862527974 ecr 3862527974], length 0
+4.000930 0.000116 read returns: 4096 bytes
+5.000836 0.999906 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 20481:24577, ack 1, win 342, options [nop,nop,TS val 3862528974 ecr 3862527974], length 4096
+5.000842 0.000006 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 24577, win 491, options [nop,nop,TS val 3862528974 ecr 3862528974], length 0
+5.000921 0.000079 read returns: 4096 bytes
+6.000860 0.999939 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 24577:28673, ack 1, win 342, options [nop,nop,TS val 3862529974 ecr 3862528974], length 4096
+6.000868 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 28673, win 491, options [nop,nop,TS val 3862529974 ecr 3862529974], length 0
+6.000946 0.000078 read returns: 4096 bytes
+7.000888 0.999942 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 28673:32769, ack 1, win 342, options [nop,nop,TS val 3862530974 ecr 3862529974], length 4096
+7.000896 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 32769, win 491, options [nop,nop,TS val 3862530974 ecr 3862530974], length 0
+7.000975 0.000079 read returns: 4096 bytes
+8.000915 0.999940 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 32769:36865, ack 1, win 342, options [nop,nop,TS val 3862531974 ecr 3862530974], length 4096
+8.000922 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 36865, win 491, options [nop,nop,TS val 3862531974 ecr 3862531974], length 0
+8.000992 0.000070 read returns: 4096 bytes
+9.000939 0.999947 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 36865:40961, ack 1, win 342, options [nop,nop,TS val 3862532974 ecr 3862531974], length 4096
+9.000946 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 40961, win 491, options [nop,nop,TS val 3862532974 ecr 3862532974], length 0
+9.001022 0.000076 read returns: 4096 bytes
+9.001115 0.000093 sleep 3 seconds
+10.000963 0.999848 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 40961:45057, ack 1, win 342, options [nop,nop,TS val 3862533974 ecr 3862532974], length 4096
+10.000970 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 45057, win 491, options [nop,nop,TS val 3862533974 ecr 3862533974], length 0
+11.000986 1.000016 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 45057:49153, ack 1, win 342, options [nop,nop,TS val 3862534974 ecr 3862533974], length 4096
+11.000997 0.000011 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 49153, win 475, options [nop,nop,TS val 3862534974 ecr 3862534974], length 0
+12.001013 1.000016 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 49153:53249, ack 1, win 342, options [nop,nop,TS val 3862535974 ecr 3862534974], length 4096
+12.001021 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 53249, win 459, options [nop,nop,TS val 3862535974 ecr 3862535974], length 0
+12.001259 0.000238 sleep 3 seconds done
+12.001366 0.000107 FIONREAD: 12288 bytes
+12.001461 0.000095 going shutdown(, SHUT_RD)
+12.001549 0.000088 shutdown(, SHUT_RD) done
+12.001653 0.000104 FIONREAD: 12288 bytes
+12.001745 0.000092 waiting. hit enter to continue
+13.001035 0.999290 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 53249:57345, ack 1, win 342, options [nop,nop,TS val 3862536974 ecr 3862535974], length 4096
+13.001043 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 57345, win 443, options [nop,nop,TS val 3862536974 ecr 3862536974], length 0
+14.001068 1.000025 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 57345:61441, ack 1, win 342, options [nop,nop,TS val 3862537974 ecr 3862536974], length 4096
+14.001080 0.000012 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 61441, win 427, options [nop,nop,TS val 3862537974 ecr 3862537974], length 0
+15.001097 1.000017 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 61441:65537, ack 1, win 342, options [nop,nop,TS val 3862538974 ecr 3862537974], length 4096
+15.001104 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 65537, win 411, options [nop,nop,TS val 3862538974 ecr 3862538974], length 0
+16.001120 1.000016 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 65537:69633, ack 1, win 342, options [nop,nop,TS val 3862539974 ecr 3862538974], length 4096
+16.001128 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 69633, win 395, options [nop,nop,TS val 3862539974 ecr 3862539974], length 0
+17.001142 1.000014 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 69633:73729, ack 1, win 342, options [nop,nop,TS val 3862540974 ecr 3862539974], length 4096
+17.001149 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 73729, win 379, options [nop,nop,TS val 3862540974 ecr 3862540974], length 0
+18.001166 1.000017 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 73729:77825, ack 1, win 342, options [nop,nop,TS val 3862541974 ecr 3862540974], length 4096
+18.001174 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 77825, win 363, options [nop,nop,TS val 3862541974 ecr 3862541974], length 0
+19.001187 1.000013 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 77825:81921, ack 1, win 342, options [nop,nop,TS val 3862542974 ecr 3862541974], length 4096
+19.001194 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 81921, win 347, options [nop,nop,TS val 3862542974 ecr 3862542974], length 0
+20.001209 1.000015 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 81921:86017, ack 1, win 342, options [nop,nop,TS val 3862543974 ecr 3862542974], length 4096
+20.001216 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 86017, win 331, options [nop,nop,TS val 3862543974 ecr 3862543974], length 0
+21.001231 1.000015 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 86017:90113, ack 1, win 342, options [nop,nop,TS val 3862544974 ecr 3862543974], length 4096
+21.001237 0.000006 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 90113, win 315, options [nop,nop,TS val 3862544974 ecr 3862544974], length 0
+22.001251 1.000014 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 90113:94209, ack 1, win 342, options [nop,nop,TS val 3862545974 ecr 3862544974], length 4096
+22.001258 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 94209, win 299, options [nop,nop,TS val 3862545974 ecr 3862545974], length 0
+23.001272 1.000014 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 94209:98305, ack 1, win 342, options [nop,nop,TS val 3862546974 ecr 3862545974], length 4096
+23.001279 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 98305, win 283, options [nop,nop,TS val 3862546974 ecr 3862546974], length 0
+24.001309 1.000030 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 98305:102401, ack 1, win 342, options [nop,nop,TS val 3862547974 ecr 3862546974], length 4096
+24.001324 0.000015 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 102401, win 267, options [nop,nop,TS val 3862547974 ecr 3862547974], length 0
+25.001340 1.000016 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 102401:106497, ack 1, win 342, options [nop,nop,TS val 3862548974 ecr 3862547974], length 4096
+25.001348 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 106497, win 251, options [nop,nop,TS val 3862548974 ecr 3862548974], length 0
+26.001370 1.000022 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 106497:110593, ack 1, win 342, options [nop,nop,TS val 3862549974 ecr 3862548974], length 4096
+26.001381 0.000011 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 110593, win 235, options [nop,nop,TS val 3862549974 ecr 3862549974], length 0
+27.001396 1.000015 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 110593:114689, ack 1, win 342, options [nop,nop,TS val 3862550974 ecr 3862549974], length 4096
+27.001403 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 114689, win 214, options [nop,nop,TS val 3862550974 ecr 3862550974], length 0
+28.001420 1.000017 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 114689:118785, ack 1, win 342, options [nop,nop,TS val 3862551975 ecr 3862550974], length 4096
+28.001428 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 118785, win 198, options [nop,nop,TS val 3862551975 ecr 3862551975], length 0
+29.001453 1.000025 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 118785:122881, ack 1, win 342, options [nop,nop,TS val 3862552975 ecr 3862551975], length 4096
+29.001466 0.000013 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 122881, win 182, options [nop,nop,TS val 3862552975 ecr 3862552975], length 0
+30.001483 1.000017 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 122881:126977, ack 1, win 342, options [nop,nop,TS val 3862553975 ecr 3862552975], length 4096
+30.001490 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 126977, win 166, options [nop,nop,TS val 3862553975 ecr 3862553975], length 0
+31.001507 1.000017 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 126977:131073, ack 1, win 342, options [nop,nop,TS val 3862554975 ecr 3862553975], length 4096
+31.001516 0.000009 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 131073, win 150, options [nop,nop,TS val 3862554975 ecr 3862554975], length 0
+32.001535 1.000019 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 131073:135169, ack 1, win 342, options [nop,nop,TS val 3862555975 ecr 3862554975], length 4096
+32.001545 0.000010 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 135169, win 134, options [nop,nop,TS val 3862555975 ecr 3862555975], length 0
+33.001563 1.000018 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 135169:139265, ack 1, win 342, options [nop,nop,TS val 3862556975 ecr 3862555975], length 4096
+33.001571 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 139265, win 118, options [nop,nop,TS val 3862556975 ecr 3862556975], length 0
+34.001600 1.000029 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 139265:143361, ack 1, win 342, options [nop,nop,TS val 3862557975 ecr 3862556975], length 4096
+34.001612 0.000012 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 143361, win 102, options [nop,nop,TS val 3862557975 ecr 3862557975], length 0
+35.001631 1.000019 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 143361:147457, ack 1, win 342, options [nop,nop,TS val 3862558975 ecr 3862557975], length 4096
+35.001639 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 147457, win 86, options [nop,nop,TS val 3862558975 ecr 3862558975], length 0
+36.001654 1.000015 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 147457:151553, ack 1, win 342, options [nop,nop,TS val 3862559975 ecr 3862558975], length 4096
+36.001661 0.000007 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 151553, win 70, options [nop,nop,TS val 3862559975 ecr 3862559975], length 0
+37.001675 1.000014 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 151553:155649, ack 1, win 342, options [nop,nop,TS val 3862560975 ecr 3862559975], length 4096
+37.001683 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 155649, win 54, options [nop,nop,TS val 3862560975 ecr 3862560975], length 0
+38.001697 1.000014 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 155649:159745, ack 1, win 342, options [nop,nop,TS val 3862561975 ecr 3862560975], length 4096
+38.001705 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 159745, win 38, options [nop,nop,TS val 3862561975 ecr 3862561975], length 0
+39.001739 1.000034 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 159745:163841, ack 1, win 342, options [nop,nop,TS val 3862562975 ecr 3862561975], length 4096
+39.001758 0.000019 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 163841, win 6, options [nop,nop,TS val 3862562975 ecr 3862562975], length 0
+40.210420 1.208662 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [P.], seq 163841:164609, ack 1, win 342, options [nop,nop,TS val 3862564184 ecr 3862562975], length 768
+40.210429 0.000009 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862564184 ecr 3862564184], length 0
+40.418420 0.207991 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862564392 ecr 3862564184], length 0
+40.418432 0.000012 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862564392 ecr 3862564184], length 0
+40.826418 0.407986 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862564800 ecr 3862564392], length 0
+41.690420 0.864002 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862565664 ecr 3862564392], length 0
+41.690602 0.000182 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862565664 ecr 3862564184], length 0
+43.354424 1.663822 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862567328 ecr 3862565664], length 0
+43.354432 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862567328 ecr 3862564184], length 0
+46.618427 3.263995 IP 127.0.0.1.1234 > 127.0.0.1.55168: Flags [.], ack 1, win 342, options [nop,nop,TS val 3862570592 ecr 3862567328], length 0
+46.618441 0.000014 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862570592 ecr 3862564184], length 0
+47.453340 0.834899 program resume
+47.453367 0.000027 FIONREAD: 123648 bytes
+47.453373 0.000006 going close(sockfd)
+47.453408 0.000035 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [R.], seq 1, ack 164609, win 491, options [nop,nop,TS val 3862571426 ecr 3862564184], length 0
+47.453444 0.000036 close(sockfd) done
