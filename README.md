@@ -9,3 +9,6 @@ close()するプログラム。
 [shutdown-rd](shutdown-rd) shutdown(sockfd, SHUT_RD)
 
 [shutdown-wr](shutdown-wr) shutdown(sockfd, SHUT_WR)
+
+[graceful-server-client](graceful-server-client) 接続するとサーバーからデータが
+どんどんやってくるプログラムのサーバーとクライアント。
