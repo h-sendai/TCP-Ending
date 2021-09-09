@@ -33,16 +33,30 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
+    if (set_so_rcvbuf(sockfd, 64*1024) < 0) {
+        exit(1);
+    }
+
+    int so_rcvbuf = get_so_rcvbuf(sockfd);
+    if (so_rcvbuf < 0) {
+        exit(1);
+    }
+    fprintfwt(stderr, "SO_RCVBUF: %d bytes\n", so_rcvbuf);
+
     unsigned char buf[64*1024];
-    for (int i = 0; i < 1000; ++i) {
+    for (int i = 0; i < 10; ++i) {
         int n = read(sockfd, buf, sizeof(buf));
         if (n < 0) {
             err(1, "read");
         }
+        fprintfwt(stderr, "read returns: %d bytes\n", n);
     }
 
-    int nbytes;
+    fprintfwt(stderr, "sleep 3 seconds\n");
+    sleep(3);
+    fprintfwt(stderr, "sleep 3 seconds done\n");
 
+    int nbytes;
     ioctl(sockfd, FIONREAD, &nbytes);
     fprintfwt(stderr, "FIONREAD: %d bytes\n", nbytes);
 
@@ -54,11 +68,19 @@ int main(int argc, char *argv[])
 
     ioctl(sockfd, FIONREAD, &nbytes);
     fprintfwt(stderr, "FIONREAD: %d bytes\n", nbytes);
-    
-    sleep(2);
+
+    fprintfwt(stderr, "waiting. hit enter to continue\n");
+    int __attribute__((unused)) c = getchar();
+    fprintfwt(stderr, "program resume\n");
 
     ioctl(sockfd, FIONREAD, &nbytes);
     fprintfwt(stderr, "FIONREAD: %d bytes\n", nbytes);
+
+    fprintfwt(stderr, "going close(sockfd)\n");
+    if (close(sockfd) < 0) {
+        err(1, "close(sockfd)");
+    }
+    fprintfwt(stderr, "close(sockfd) done\n");
 
     return 0;
 }
