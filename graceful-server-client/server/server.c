@@ -100,6 +100,12 @@ int main(int argc, char *argv[])
                 }
                 else if (n == 0) { /* client send FIN */
                     debug_print(stderr, "EOF\n");
+                    if (shutdown(sockfd, SHUT_WR) < 0) {
+                        err(1, "shutdown(sockfd, SHUT_WR)");
+                    }
+                    if (close(sockfd) < 0) {
+                        err(1, "close");
+                    }
                     exit(0);
                 }
                 else {
