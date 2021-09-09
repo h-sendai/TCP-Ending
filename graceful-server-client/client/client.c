@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
             debug_print(stderr, "shutdown(,SHUT_RD) done\n");
 #endif
 
-            usleep(1000);
+            // usleep(1000);
             if (close(sockfd) < 0) {
                 err(1, "close()");
             }
