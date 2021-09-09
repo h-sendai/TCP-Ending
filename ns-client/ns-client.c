@@ -31,7 +31,16 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    sleep(10);
+    int nbytes;
+    ioctl(sockfd, FIONREAD, &nbytes);
+    fprintf(stderr, "FIONREAD: %d\n", nbytes);
+    fprintf(stderr, "do input at nc terminal\n");
+    fprintf(stderr, "then hit enter in this terminal to get number of bytes in this socket receive buffer\n");
+
+    int __attribute__((unused)) c = getchar();
+
+    ioctl(sockfd, FIONREAD, &nbytes);
+    fprintf(stderr, "FIONREAD: %d\n", nbytes);
 
     if (close(sockfd) < 0) {
         err(1, "close");
