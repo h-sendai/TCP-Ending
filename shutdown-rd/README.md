@@ -52,9 +52,9 @@ tcpdumpを実行し、別端末で
 
 ## log
 
-(linux.txt)[linux.txt] Linuxでのログ。
+[linux.txt](linux.txt) Linuxでのログ。
 
-(openbsd.txt)[openbsd.txt] OpenBSDでのログ。
+[openbsd.txt](openbsd.txt) OpenBSDでのログ。
 
 ## 結果
 
