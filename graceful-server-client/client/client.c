@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
     int bufsize = 4*1024;
     int sleep_usec = -1;
     char *timeout_str = "2.0";
+    int has_sent_stop_request = 0;
 
     while ( (c = getopt(argc, argv, "b:dhp:s:t:")) != -1) {
         switch (c) {
@@ -96,38 +97,17 @@ int main(int argc, char *argv[])
     
     for ( ; ; ) {
         if (got_alrm) {
-
-            debug_print(stderr, "going shutdown(,SHUT_WR)\n");
+            got_alrm = 0;
+            /* send data stop request */
+            debug_print(stderr, "going send stop request. going shutdown(,SHUT_WR)\n");
             if (shutdown(sockfd, SHUT_WR) < 0) {
                 err(1, "shutdown(sockfd, SHUT_WR)");
             }
             debug_print(stderr, "shutdown(,SHUT_WR) done\n");
-
-            for ( ; ; ) {
-                int n = read(sockfd, buf, bufsize);
-                if (n < 0) {
-                    err(1, "read in got_alrm");
-                }
-                if (n == 0) {
-                    break;
-                }
-                debug_print(stderr, "reading after got_alrm: %d bytes\n", n);
-            }
-
-#if 0
-            debug_print(stderr, "going shutdown(,SHUT_RD)\n");
-            if (shutdown(sockfd, SHUT_RD) < 0) {
-                err(1, "shutdown(sockfd, SHUT_RD)");
-            }
-            debug_print(stderr, "shutdown(,SHUT_RD) done\n");
-#endif
-
-            // usleep(1000);
-            if (close(sockfd) < 0) {
-                err(1, "close()");
-            }
-            exit(0);
+            /* read remaining data in for ( ; ; ) loop */
+            has_sent_stop_request = 1;
         }
+
         int n = read(sockfd, buf, bufsize);
         if (n < 0) {
             if (errno == EINTR) {
@@ -137,9 +117,23 @@ int main(int argc, char *argv[])
                 err(1, "read");
             }
         }
+        if (n == 0) {
+            debug_print(stderr, "receive EOF\n");
+            break;
+        }
+        if (has_sent_stop_request) {
+            debug_print(stderr, "after stop request read(): %d bytes\n", n);
+        }
         if (sleep_usec > 0) {
             usleep(sleep_usec);
         }
     }
-
+    
+    debug_print(stderr, "going close()\n");
+    if (close(sockfd) < 0) {
+        err(1, "close");
+    }
+    debug_print(stderr, "close() done\n");
+    
+    return 0;
 }
