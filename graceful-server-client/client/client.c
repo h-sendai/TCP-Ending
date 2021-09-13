@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
             }
         }
         if (n == 0) {
-            debug_print(stderr, "receive EOF\n");
+            debug_print(stderr, "close() returns 0. (EOF)\n");
             break;
         }
         if (has_sent_stop_request) {
