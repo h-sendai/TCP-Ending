@@ -1,0 +1,38 @@
+1.999977 0.000009 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [P.], seq 2295160780:2295189505, ack 1, win 342, options [nop,nop,TS val 136059770 ecr 136059770], length 28725
+2.000021 0.000044 client: send stop request. do shutdown(,SHUT_WR)
+2.000023 0.000002 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [.], seq 2295189505:2295254988, ack 1, win 342, options [nop,nop,TS val 136059770 ecr 136059770], length 65483
+2.000075 0.000052 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [.], seq 2295254988:2295320471, ack 1, win 342, options [nop,nop,TS val 136059770 ecr 136059770], length 65483
+2.000130 0.000055 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [.], seq 2295320471:2295385954, ack 1, win 342, options [nop,nop,TS val 136059771 ecr 136059770], length 65483
+2.000178 0.000048 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [.], seq 2295385954:2295451437, ack 1, win 342, options [nop,nop,TS val 136059771 ecr 136059770], length 65483
+2.000187 0.000009 IP 127.0.0.1.59938 > 127.0.0.1.1234: Flags [F.], seq 1, ack 2295451437, win 23180, options [nop,nop,TS val 136059771 ecr 136059770], length 0
+2.000193 0.000006 client: shutdown(,SHUT_WR) done
+2.000198 0.000005 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [P.], seq 2295451437:2295463937, ack 2, win 342, options [nop,nop,TS val 136059771 ecr 136059771], length 12500
+2.000212 0.000014 client: after stop request read(): 4096 bytes
+2.000228 0.000016 client: after stop request read(): 4096 bytes
+2.000243 0.000015 client: after stop request read(): 4096 bytes
+2.000249 0.000006 server: receive stop request.  do shutdown(,SHUT_WR)
+2.000259 0.000010 client: after stop request read(): 4096 bytes
+2.000274 0.000015 client: after stop request read(): 4096 bytes
+:
+: last line repeated 
+:
+2.000384 0.000016 client: after stop request read(): 4096 bytes
+2.000400 0.000016 client: after stop request read(): 4096 bytes
+2.000405 0.000005 IP 127.0.0.1.1234 > 127.0.0.1.59938: Flags [F.], seq 2295463937, ack 2, win 342, options [nop,nop,TS val 136059771 ecr 136059771], length 0
+2.000412 0.000007 IP 127.0.0.1.59938 > 127.0.0.1.1234: Flags [.], ack 2295463938, win 23121, options [nop,nop,TS val 136059771 ecr 136059771], length 0
+2.000421 0.000009 client: after stop request read(): 4096 bytes
+2.000425 0.000004 server: shutdown(,SHUT_WR) done
+2.000436 0.000011 client: after stop request read(): 4096 bytes
+2.000440 0.000004 server: do close()
+2.000452 0.000012 client: after stop request read(): 4096 bytes
+2.000467 0.000015 client: after stop request read(): 4096 bytes
+2.000470 0.000003 server: close() done
+2.000482 0.000012 client: after stop request read(): 4096 bytes
+2.000498 0.000016 client: after stop request read(): 4096 bytes
+:
+: last lien repeated
+:
+2.001569 0.000016 client: after stop request read(): 4096 bytes
+2.001582 0.000013 client: close() returns 0. (EOF)
+2.001594 0.000012 client: do close()
+2.001623 0.000029 client: close() done
