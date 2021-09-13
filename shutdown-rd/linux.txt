@@ -41,7 +41,7 @@
 12.001021 0.000008 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 53249, win 459, options [nop,nop,TS val 3862535974 ecr 3862535974], length 0
 12.001259 0.000238 sleep 3 seconds done
 12.001366 0.000107 FIONREAD: 12288 bytes
-12.001461 0.000095 going shutdown(, SHUT_RD)
+12.001461 0.000095 do shutdown(, SHUT_RD)
 12.001549 0.000088 shutdown(, SHUT_RD) done
 12.001653 0.000104 FIONREAD: 12288 bytes
 12.001745 0.000092 waiting. hit enter to continue
@@ -112,6 +112,6 @@
 46.618441 0.000014 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [.], ack 164609, win 0, options [nop,nop,TS val 3862570592 ecr 3862564184], length 0
 47.453340 0.834899 program resume
 47.453367 0.000027 FIONREAD: 123648 bytes
-47.453373 0.000006 going close(sockfd)
+47.453373 0.000006 do close(sockfd)
 47.453408 0.000035 IP 127.0.0.1.55168 > 127.0.0.1.1234: Flags [R.], seq 1, ack 164609, win 491, options [nop,nop,TS val 3862571426 ecr 3862564184], length 0
 47.453444 0.000036 close(sockfd) done

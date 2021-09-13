@@ -99,12 +99,12 @@ int main(int argc, char *argv[])
                     err(1, "read");
                 }
                 else if (n == 0) { /* client send FIN */
-                    debug_print(stderr, "receive stop request.  going shutdown(,SHUT_WR)\n");
+                    debug_print(stderr, "receive stop request.  do shutdown(,SHUT_WR)\n");
                     if (shutdown(sockfd, SHUT_WR) < 0) {
                         err(1, "shutdown(sockfd, SHUT_WR)");
                     }
                     debug_print(stderr, "shutdown(,SHUT_WR) done\n");
-                    debug_print(stderr, "going close()\n");
+                    debug_print(stderr, "do close()\n");
                     if (close(sockfd) < 0) {
                         err(1, "close");
                     }

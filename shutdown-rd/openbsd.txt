@@ -39,7 +39,7 @@
 11.001779 0.000011 127.0.0.1.46930 > 127.0.0.1.1234: . ack 49153 win 896 <nop,nop,timestamp 1106135257 2223273586> (DF)
 12.000607 0.998828 sleep 3 seconds done
 12.000639 0.000032 FIONREAD: 8192 bytes
-12.000649 0.000010 going shutdown(, SHUT_RD)
+12.000649 0.000010 do shutdown(, SHUT_RD)
 12.000672 0.000023 shutdown(, SHUT_RD) done
 12.000685 0.000013 FIONREAD: 0 bytes
 12.000695 0.000010 waiting. hit enter to continue
@@ -75,7 +75,7 @@
 30.989703 0.000013 127.0.0.1.46930 > 127.0.0.1.1234: . ack 106497 win 0 <nop,nop,timestamp 1106135297 2223273626> (DF)
 31.410952 0.421249 program resume
 31.410966 0.000014 FIONREAD: 0 bytes
-31.410976 0.000010 going close(sockfd)
+31.410976 0.000010 do close(sockfd)
 31.411016 0.000040 127.0.0.1.46930 > 127.0.0.1.1234: F 1:1(0) ack 106497 win 0 <nop,nop,timestamp 1106135298 2223273626> (DF)
 31.411017 0.000001 close(sockfd) done
 31.411033 0.000016 127.0.0.1.1234 > 127.0.0.1.46930: . ack 2 win 256 <nop,nop,timestamp 2223273627 1106135298> (DF)

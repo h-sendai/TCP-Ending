@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     ioctl(sockfd, FIONREAD, &nbytes);
     fprintfwt(stderr, "FIONREAD: %d bytes\n", nbytes);
 
-    fprintfwt(stderr, "going shutdown(, SHUT_WR)\n");
+    fprintfwt(stderr, "do shutdown(, SHUT_WR)\n");
     if (shutdown(sockfd, SHUT_WR) < 0) {
         err(1, "shutdown(sockfd, SHUT_WR)");
     }
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     ioctl(sockfd, FIONREAD, &nbytes);
     fprintfwt(stderr, "FIONREAD: %d bytes\n", nbytes);
 
-    fprintfwt(stderr, "going close()\n");
+    fprintfwt(stderr, "do close()\n");
     if (close(sockfd) < 0) {
         err(1, "close");
     }

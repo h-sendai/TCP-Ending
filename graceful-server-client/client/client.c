@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
         if (got_alrm) {
             got_alrm = 0;
             /* send data stop request */
-            debug_print(stderr, "going send stop request. going shutdown(,SHUT_WR)\n");
+            debug_print(stderr, "send stop request. do shutdown(,SHUT_WR)\n");
             if (shutdown(sockfd, SHUT_WR) < 0) {
                 err(1, "shutdown(sockfd, SHUT_WR)");
             }
@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
         }
     }
     
-    debug_print(stderr, "going close()\n");
+    debug_print(stderr, "do close()\n");
     if (close(sockfd) < 0) {
         err(1, "close");
     }
