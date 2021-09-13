@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
                 bufsize = get_num(optarg);
                 break;
             case 'd':
-                debug = 1;
+                debug += 1;
                 break;
             case 'p':
                 port = strtol(optarg, NULL, 0);
@@ -90,7 +90,9 @@ int main(int argc, char *argv[])
             }
         }
         else { /* select() returns successfully */
-            debug_print(stderr, "select OK return\n");
+            if (debug > 1) {
+                debug_print(stderr, "select OK return\n");
+            }
 
             if (FD_ISSET(sockfd, &rset)) {
                 unsigned char read_buf[16];
@@ -117,10 +119,14 @@ int main(int argc, char *argv[])
             }
 
             if (FD_ISSET(sockfd, &wset)) {
-                debug_print(stderr, "wset set\n");
+                if (debug > 1) {
+                    debug_print(stderr, "wset set\n");
+                }
 
                 int n = write(sockfd, buf, bufsize);
-                debug_print(stderr, "write return: %d\n", n);
+                if (debug > 1) {
+                    debug_print(stderr, "write return: %d\n", n);
+                }
                 if (n < 0) {
                     err(1, "write error");
                 }
@@ -128,7 +134,10 @@ int main(int argc, char *argv[])
                     fprintfwt(stderr, "write partial: %d bytes\n", n);
                     exit(0);
                 }
-                debug_print(stderr, "write %d bytes\n", n);
+                if (debug > 1) {
+                    debug_print(stderr, "write %d bytes\n", n);
+                }
+
                 if (sleep_usec > 0) {
                     usleep(sleep_usec);
                 }
