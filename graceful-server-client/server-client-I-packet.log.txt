@@ -1,0 +1,16 @@
+1.999898 0.000014 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [P.], seq 2270236673:2270273537, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 36864
+1.999930 0.000032 IP 127.0.0.1.59942 > 127.0.0.1.1234: Flags [.], ack 2270273537, win 24555, options [nop,nop,TS val 136598346 ecr 136598346], length 0
+1.999944 0.000014 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [P.], seq 2270273537:2270322689, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 49152
+1.999996 0.000052 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [.], seq 2270322689:2270388172, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 65483
+2.000011 0.000015 client: send stop request. do shutdown(,SHUT_WR)
+2.000048 0.000037 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [.], seq 2270388172:2270453655, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 65483
+2.000095 0.000047 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [.], seq 2270453655:2270519138, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 65483
+2.000146 0.000051 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [.], seq 2270519138:2270584621, ack 1, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 65483
+2.000165 0.000019 IP 127.0.0.1.59942 > 127.0.0.1.1234: Flags [F.], seq 1, ack 2270584621, win 23336, options [nop,nop,TS val 136598346 ecr 136598346], length 0
+2.000172 0.000007 client: shutdown(,SHUT_WR) done
+2.000177 0.000005 IP 127.0.0.1.1234 > 127.0.0.1.59942: Flags [P.], seq 2270584621:2270613505, ack 2, win 342, options [nop,nop,TS val 136598346 ecr 136598346], length 28884
+2.000185 0.000008 client: immediately close. do close()
+2.000221 0.000036 IP 127.0.0.1.59942 > 127.0.0.1.1234: Flags [R.], seq 2, ack 2270613505, win 24555, options [nop,nop,TS val 136598346 ecr 136598346], length 0
+2.000221 0.000000 server: receive stop request.  do shutdown(,SHUT_WR)
+2.000250 0.000029 client: immediately close. close() done. exit()
+2.000411 0.000161 server: shutdown(sockfd, SHUT_WR): Transport endpoint is not connected
