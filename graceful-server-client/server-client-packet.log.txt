@@ -33,6 +33,6 @@
 : last lien repeated
 :
 2.001569 0.000016 client: after stop request read(): 4096 bytes
-2.001582 0.000013 client: close() returns 0. (EOF)
+2.001582 0.000013 client: read() returns 0. (EOF)
 2.001594 0.000012 client: do close()
 2.001623 0.000029 client: close() done
