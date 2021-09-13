@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
                 else if (n == 0) { /* client send FIN */
                     debug_print(stderr, "receive stop request.  do shutdown(,SHUT_WR)\n");
                     if (shutdown(sockfd, SHUT_WR) < 0) {
-                        err(1, "shutdown(sockfd, SHUT_WR)");
+                        errwt(1, "shutdown(sockfd, SHUT_WR)");
                     }
                     debug_print(stderr, "shutdown(,SHUT_WR) done\n");
                     debug_print(stderr, "do close()\n");

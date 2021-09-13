@@ -3,6 +3,7 @@
 
 #include <sys/time.h>
 
+#include <err.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <time.h>
@@ -10,6 +11,7 @@
 extern int debug;
 extern int fprintfwt(FILE *pFILE,const char *fmt,...);
 extern int debug_print(FILE *pFILE,const char *fmt,...);
+extern void errwt(int eval, const char *fmt, ...);
 
 /*************************************************************************
 	System : KEK MLF Module Tester.

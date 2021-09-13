@@ -79,3 +79,22 @@ int debug_print(FILE *pFILE,const char *fmt,...)
     }
     return 0;
 }
+
+void errwt(int eval, const char *fmt, ...)
+{
+    struct timeval tv;
+    struct tm tm;
+    char timestamp_buf[128];
+
+    gettimeofday(&tv, NULL);
+    localtime_r(&tv.tv_sec, &tm);
+    strftime(timestamp_buf, sizeof(timestamp_buf), "%T", &tm);
+    fprintf(stderr, "%s.%06ld ", timestamp_buf, tv.tv_usec);
+
+    va_list ap;
+    va_start(ap, fmt);
+    verr(eval, fmt, ap);
+    va_end(ap);
+
+    return;
+}
