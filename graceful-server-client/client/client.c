@@ -28,7 +28,8 @@ void sig_alrm(int signo)
 
 int usage()
 {
-    char msg[] = "Usage: client [-d] [-h] [-p PORT] [-b BUFSIZE] [-s SLEEP_USEC] [-t TIMEOUT] remote_host";
+    char msg[] = "Usage: client [-d] [-h] [-p PORT] [-b BUFSIZE] [-s SLEEP_USEC] [-t TIMEOUT] [-I] remote_host\n"
+                 "-I: client close() immediately after send TCP FIN (shutdown(fd, SHUT_WR)";
     fprintf(stderr, "%s\n", msg);
 
     return 0;
@@ -42,8 +43,9 @@ int main(int argc, char *argv[])
     int sleep_usec = -1;
     char *timeout_str = "2.0";
     int has_sent_stop_request = 0;
+    int immediately_close = 0;
 
-    while ( (c = getopt(argc, argv, "b:dhp:s:t:")) != -1) {
+    while ( (c = getopt(argc, argv, "b:dhp:s:t:I")) != -1) {
         switch (c) {
             case 'h':
                 usage();
@@ -63,6 +65,9 @@ int main(int argc, char *argv[])
                 break;
             case 't':
                 timeout_str = optarg;
+                break;
+            case 'I':
+                immediately_close = 1;
                 break;
             default:
                 break;
@@ -104,6 +109,12 @@ int main(int argc, char *argv[])
                 err(1, "shutdown(sockfd, SHUT_WR)");
             }
             debug_print(stderr, "shutdown(,SHUT_WR) done\n");
+            if (immediately_close) {
+                debug_print(stderr, "immediately close. do close()\n");
+                close(sockfd);
+                debug_print(stderr, "immediately close. close() done. exit()\n");
+                exit(0);
+            }
             /* read remaining data in for ( ; ; ) loop */
             has_sent_stop_request = 1;
         }
