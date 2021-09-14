@@ -89,6 +89,12 @@ int main(int argc, char *argv[])
         err(1, "epoll_ctl: EPOLL_CTL_ADD");
     }
     for ( ; ; ) {
+        /* epoll_wait returns the number of file descriptors ready for
+           requested IO.  In this server program, we added only one
+           file descriptor.  So, nfds = 1 if epoll_wait succeed.
+           We dont need following for (int i = 0; i < nfds; ++i) loop
+           in this program, but include it for future references */
+
         int nfds = epoll_wait(epollfd, events, max_events, -1);
         if (nfds < 0) {
             err(1, "epoll_wait");
