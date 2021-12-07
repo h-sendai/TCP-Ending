@@ -40,6 +40,11 @@ OpenBSDのようにshutdown(SHUT_RD)でソケットレシーブバッファが�
 
 ## プログラムおよびパケットキャプチャのログ
 
+client/client.cでは接続後、2秒後にshutdown(sockfd, SHUT_WR)でFINを
+送るようにしている。shutdown()するまでの時間は-tで指定可能。
+
+-dで動作を画面に出すようになる。
+
 [server-client-packet.log.txt](server-client-packet.log.txt) 終了付近のログ。
 2.000011秒のところでクライアントが終了リクエストを送っている。
 
