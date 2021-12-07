@@ -1,0 +1,21 @@
+mistuple% ./client -d -p 24 192.168.10.16                    ~/app/c/socket/TCP-Ending/graceful-server-client/client
+16:30:09.037135 client: send stop request. do shutdown(,SHUT_WR)
+16:30:09.037271 client: shutdown(,SHUT_WR) done
+16:30:09.037298 client: after stop request read(): 4096 bytes
+16:30:09.037359 client: after stop request read(): 4096 bytes
+16:30:09.037372 client: after stop request read(): 4096 bytes
+16:30:09.037384 client: after stop request read(): 4096 bytes
+16:30:09.037404 client: after stop request read(): 4096 bytes
+16:30:09.037436 client: after stop request read(): 4096 bytes
+16:30:09.037453 client: after stop request read(): 4096 bytes
+16:30:09.037469 client: after stop request read(): 4096 bytes
+16:30:09.037485 client: after stop request read(): 4096 bytes
+16:30:09.037500 client: after stop request read(): 4096 bytes
+16:30:09.037515 client: after stop request read(): 4096 bytes
+16:30:09.037532 client: after stop request read(): 4096 bytes
+16:30:09.037548 client: after stop request read(): 772 bytes
+16:30:09.037584 client: after stop request read(): 1460 bytes
+16:30:09.040503 client: after stop request read(): 621 bytes
+16:30:09.040618 client: read() returns 0. (EOF)
+16:30:09.040634 client: do close()
+16:30:09.040677 client: close() done
